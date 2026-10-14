@@ -1,0 +1,7 @@
+Design Memo: Company Directory
+
+Recursive insertion worked by starting at the top of the company directory and searching for the manager who needed a new employee. If the current employee was not the manager I was looking for, the program searched the left branch and then the right branch. Once it found the correct manager, it checked whether the requested side was open. If it was open, the program created a new employee node and connected it to that manager. If the side was already occupied or the manager could not be found, the program displayed an error message instead of adding the employee in the wrong place.
+
+One challenge was making sure the program searched through the tree instead of only checking the team lead. Another challenge was handling empty branches correctly during recursion. I had to make sure the search could stop when it found the correct manager without losing track of the current node. I also needed to check whether a manager already had an employee on the requested side.
+
+I think trees can be useful in real-world systems whenever information has a hierarchy. For example, a company can use a tree to organize managers and employees, while a computer uses folders and subfolders to organize files. Trees can also represent the structure of a website. Compared with a simple list, a tree makes relationships between items easier to understand. Building this project helped me see how recursion and custom classes can work together to organize information in a way that reflects how a real company operates.
